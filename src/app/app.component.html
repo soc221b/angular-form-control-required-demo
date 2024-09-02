@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup">
+  <label for="name">Name</label>
+  <input id="name" formControlName="name" />
+  @if (
+    formGroup.controls.name.touched &&
+    formGroup.controls.name.hasError("required")
+  ) {
+    <span>Required</span>
+  }
+</form>
