@@ -5,11 +5,12 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { RequiredDirective } from './required.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RequiredDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
