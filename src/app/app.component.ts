@@ -6,12 +6,11 @@ import {
   Validators,
 } from '@angular/forms';
 import { RequiredDirective } from './required.directive';
-import { LabelAsteriskDirective } from './label-asterisk.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ReactiveFormsModule, RequiredDirective, LabelAsteriskDirective],
+  imports: [ReactiveFormsModule, RequiredDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
